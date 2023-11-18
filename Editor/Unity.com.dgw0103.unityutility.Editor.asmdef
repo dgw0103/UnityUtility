@@ -1,5 +1,6 @@
 {
-    "name": "Unity.com.{{COMPANY}}.{{REPOSITORY_NAME}}.Editor",
+    "name": "Unity.com.dgw0103.UnityUtility.Editor",
+    "rootNamespace": "UnityUtility.Editor",
     "references": [],
     "includePlatforms": [
         "Editor"
