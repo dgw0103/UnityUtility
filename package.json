@@ -1,15 +1,8 @@
 {
   "name": "com.dgw0103.unityutility",
-  "displayName": "dgw0103 - UnityUtility",
+  "displayName": "UnityUtility",
   "version": "0.0.0",
   "description": "My utilities for unity",
-  "keywords": [
-    "unity",
-    "unity3d",
-    "upm",
-    "dgw0103",
-    "utility"
-  ],
   "homepage": "https://github.com/dgw0103/UnityUtility.git",
   "bugs": {
     "url": "https://github.com/dgw0103/UnityUtility/issues"
