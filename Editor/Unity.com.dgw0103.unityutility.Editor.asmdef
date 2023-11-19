@@ -1,5 +1,5 @@
 {
-    "name": "Unity.com.dgw0103.UnityUtility.Editor",
+    "name": "Unity.com.dgw0103.unityutility.Editor",
     "rootNamespace": "UnityUtility.Editor",
     "references": [],
     "includePlatforms": [
