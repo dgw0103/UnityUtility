@@ -19,6 +19,7 @@
     "url": "git+ssh://git@github.com/dgw0103/unityutility.git"
   },
   "license": "MIT",
+  "author": "dgw0103",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
