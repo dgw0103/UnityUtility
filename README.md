@@ -1,6 +1,3 @@
-[![npm package](https://img.shields.io/npm/v/com.dgw0103.unityutility)](https://www.npmjs.com/package/com.dgw0103.unityutility)
-[![openupm](https://img.shields.io/npm/v/com.dgw0103.unityutility?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.dgw0103.unityutility/)
-![Tests](https://github.com/dgw0103/unityutility/workflows/Tests/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 # UnityUtility
