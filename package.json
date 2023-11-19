@@ -6,8 +6,8 @@
   "description": "My utilities for unity",
   "keywords": [
     "unity",
-	"unity3d",
-	"upm",
+    "unity3d",
+    "upm",
     "dgw0103",
     "utility"
   ],
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dgw0103/UnityUtility.git"
+    "url": "git+ssh://git@github.com/dgw0103/unityutility.git"
   },
   "license": "MIT",
   "scripts": {
