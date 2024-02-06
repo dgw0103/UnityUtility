@@ -1,6 +1,6 @@
 {
-    "name": "Unity.com.dgw0103.unityutility.Editor",
-    "rootNamespace": "UnityUtility.Editor",
+    "name": "HoJin.UnityUtilityEditor",
+    "rootNamespace": "HoJin.UnityUtilityEditor",
     "references": [],
     "includePlatforms": [
         "Editor"

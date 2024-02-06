@@ -4,8 +4,13 @@
 
 My utilities for unity
 
-# Version 0.0.0
+# Version 2023.0.0.0
 Can save datas of custom editor window using EditorWindowDataSaver.
+
+# Version 2024.0.0.0
+Fix names of namespace and assembly.
+Remove csharp utility script.
+Add URPKeyword.
 
 ## License
 

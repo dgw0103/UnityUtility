@@ -1,5 +1,6 @@
 {
-    "name": "Unity.com.dgw0103.unityutility",
+    "name": "HoJin.UnityUtility",
+    "rootNamespace": "HoJin.UnityUtility",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
