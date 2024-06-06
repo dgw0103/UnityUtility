@@ -1,6 +1,6 @@
 {
-    "name": "HoJin.UnityUtilityEditor",
-    "rootNamespace": "HoJin.UnityUtilityEditor",
+    "name": "UnityUtilityEditor",
+    "rootNamespace": "UnityUtilityEditor",
     "references": [],
     "includePlatforms": [
         "Editor"

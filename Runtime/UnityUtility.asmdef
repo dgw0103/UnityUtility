@@ -1,6 +1,6 @@
 {
-    "name": "HoJin.UnityUtility",
-    "rootNamespace": "HoJin.UnityUtility",
+    "name": "UnityUtility",
+    "rootNamespace": "UnityUtility",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
