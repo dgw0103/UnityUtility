@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HoJin.UnityUtility
+namespace UnityUtility
 {
     public static class UnityUtility
     {

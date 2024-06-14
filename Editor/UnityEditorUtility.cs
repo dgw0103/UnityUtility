@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace HoJin.UnityUtilityEditor
+namespace UnityUtilityEditor
 {
     public static class UnityEditorUtility
     {

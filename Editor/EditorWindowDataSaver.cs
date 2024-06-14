@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-namespace HoJin.UnityUtilityEditor
+namespace UnityUtilityEditor
 {
     public class EditorWindowDataSaver<T>
     {
