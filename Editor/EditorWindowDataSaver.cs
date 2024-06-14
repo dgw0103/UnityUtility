@@ -9,13 +9,22 @@ namespace HoJin.UnityUtilityEditor
     {
         public static void Save(T t)
         {
-            string sightDetectorWindowData = JsonUtility.ToJson(t, false);
-            EditorPrefs.SetString(nameof(T), sightDetectorWindowData);
+            string windowData = JsonUtility.ToJson(t, false);
+
+
+
+            EditorPrefs.SetString(nameof(T), windowData);
         }
-        public static void Load(T sightDetectorWindow)
+
+
+
+        public static void Load(T window)
         {
-            string sightDetectorWindowData = EditorPrefs.GetString(nameof(T), JsonUtility.ToJson(sightDetectorWindow, false));
-            JsonUtility.FromJsonOverwrite(sightDetectorWindowData, sightDetectorWindow);
+            string windowData = EditorPrefs.GetString(nameof(T), JsonUtility.ToJson(window, false));
+
+
+
+            JsonUtility.FromJsonOverwrite(windowData, window);
         }
     }
 }

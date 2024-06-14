@@ -76,11 +76,11 @@ namespace HoJin.UnityUtility
 
 
         #region LayerMask
-        public static bool IsInclude(this LayerMask layerMask, int layer)
+        public static bool IsLayerContained(this int layer, LayerMask layerMask)
         {
-            return layerMask.value.Equals(layerMask | (1 << layer));
+            return layerMask.Equals(layerMask | (1 << layer));
         }
-        public static bool IsInclude(this LayerMask layerMask, LayerMask other)
+        public static bool IsLayerMaskContained(this LayerMask layerMask, LayerMask other)
         {
             return layerMask.Equals(layerMask | other);
         }
