@@ -1,0 +1,21 @@
+{
+  "name": "com.dgw0103.unityutility",
+  "version": "0.0.0",
+
+  "description": "Unity utility",
+  "displayName": "UnityUtility",
+
+  "author": "dgw0103",
+  "keywords": [
+    "dgw0103"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dgw0103/UnityUtility.git",
+  "bugs": {
+    "url": "https://github.com/dgw0103/UnityUtility/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgw0103/UnityUtility.git"
+  }
+}
