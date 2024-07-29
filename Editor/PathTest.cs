@@ -5,11 +5,14 @@ using UnityEditor;
 using System;
 using System.IO;
 
-[InitializeOnLoad]
 public class PathTest
 {
-    static PathTest()
+    [InitializeOnLoadMethod]
+    private static void PathTestMethod()
     {
         Debug.Log(Directory.GetCurrentDirectory());
+        Debug.Log(new FileInfo("PathTest.cs").Directory.FullName);
+        Debug.Log(new FileInfo("PathTest.cs").FullName);
+        Debug.Log(Path.GetFullPath("PathTest.cs"));
     }
 }
