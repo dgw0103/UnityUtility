@@ -8,8 +8,7 @@ using System.IO;
 [CreateAssetMenu(fileName = nameof(PathTest), menuName = nameof(PathTest))]
 public class PathTest : ScriptableObject, ISerializationCallbackReceiver
 {
-    [InitializeOnLoadMethod]
-    private static void PathTestMethod()
+    private void PathTestMethod()
     {
         Debug.Log(Directory.GetCurrentDirectory());
         Debug.Log(new FileInfo("PathTest.cs").Directory.FullName);
