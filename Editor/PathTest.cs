@@ -5,7 +5,8 @@ using UnityEditor;
 using System;
 using System.IO;
 
-public class PathTest
+[CreateAssetMenu(fileName = nameof(PathTest), menuName = nameof(PathTest))]
+public class PathTest : ScriptableObject, ISerializationCallbackReceiver
 {
     [InitializeOnLoadMethod]
     private static void PathTestMethod()
@@ -14,5 +15,13 @@ public class PathTest
         Debug.Log(new FileInfo("PathTest.cs").Directory.FullName);
         Debug.Log(new FileInfo("PathTest.cs").FullName);
         Debug.Log(Path.GetFullPath("PathTest.cs"));
+    }
+    public void OnAfterDeserialize()
+    {
+        Debug.Log(nameof(OnAfterDeserialize));
+    }
+    public void OnBeforeSerialize()
+    {
+        Debug.Log(nameof(OnBeforeSerialize));
     }
 }
