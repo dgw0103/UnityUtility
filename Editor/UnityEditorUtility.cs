@@ -9,6 +9,8 @@ namespace UnityUtilityEditor
     {
         public static string projectManifestPath = Application.dataPath.Substring(0, Application.dataPath.Length - 6) + "Packages/manifest.json";
 
+
+
         public static string GetFolderPathOfThis(this ScriptableObject scriptableObject)
         {
             return GetFolderPathOfThis(MonoScript.FromScriptableObject(scriptableObject));
@@ -20,6 +22,18 @@ namespace UnityUtilityEditor
         private static string GetFolderPathOfThis(MonoScript monoScript)
         {
             return AssetDatabase.GetAssetPath(monoScript).Replace($"/{monoScript.name}.cs", string.Empty);
+        }
+
+        public static IEnumerable<SerializedProperty> GetArray(this SerializedProperty serializedProperty)
+        {
+            List<SerializedProperty> elements = new List<SerializedProperty>(serializedProperty.arraySize);
+
+            for (int i = 0; i < serializedProperty.arraySize; i++)
+            {
+                elements.Add(serializedProperty.GetArrayElementAtIndex(i));
+            }
+
+            return elements;
         }
     }
 }
