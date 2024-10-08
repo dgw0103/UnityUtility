@@ -8,6 +8,7 @@ namespace UnityUtilityEditor
     public static class UnityEditorUtility
     {
         public static string projectManifestPath = Application.dataPath.Substring(0, Application.dataPath.Length - 6) + "Packages/manifest.json";
+        public const string menuItemPath = "Unity utility/";
 
 
 
