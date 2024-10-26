@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+#if PROBUILDER
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.ProBuilder;
@@ -34,3 +33,4 @@ namespace UnityUtilityEditor
         }
     }
 }
+#endif

@@ -1,0 +1,23 @@
+{
+    "name": "ProbuilderUtility",
+    "rootNamespace": "",
+    "references": [
+        "GUID:1826c0224c0d048b88112c79bbb0cd85",
+        "GUID:f2698cb4f086fe54e949d57576910b00"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.probuilder",
+            "expression": "",
+            "define": "PROBUILDER"
+        }
+    ],
+    "noEngineReferences": false
+}
