@@ -1,4 +1,4 @@
-#if PROBUILDER
+#if INCLUDE_PROBUILDER
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.ProBuilder;

@@ -5,7 +5,9 @@
         "GUID:1826c0224c0d048b88112c79bbb0cd85",
         "GUID:f2698cb4f086fe54e949d57576910b00"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
@@ -16,7 +18,7 @@
         {
             "name": "com.unity.probuilder",
             "expression": "",
-            "define": "PROBUILDER"
+            "define": "INCLUDE_PROBUILDER"
         }
     ],
     "noEngineReferences": false
