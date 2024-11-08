@@ -59,4 +59,8 @@ public class CodeWriter
             }
         }
     }
+    public override string ToString()
+    {
+        return buffer.ToString();
+    }
 }

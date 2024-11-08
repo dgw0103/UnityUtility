@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.PackageManager;
+using UnityEditor.PackageManager.Requests;
 
 namespace UnityUtilityEditor
 {
@@ -35,6 +37,19 @@ namespace UnityUtilityEditor
             }
 
             return elements;
+        }
+
+        public static IEnumerable<UnityEditor.PackageManager.PackageInfo> GetPackges()
+        {
+            ListRequest listRequest = Client.List(true);
+
+            if (listRequest.Error != null)
+            {
+                Debug.Log("Error: " + listRequest.Error.message);
+                return null;
+            }
+
+            return listRequest.Result;
         }
     }
 }

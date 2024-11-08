@@ -9,6 +9,11 @@ namespace UnityUtilityEditor
     {
         public static void Save(T t)
         {
+            if (t == null)
+            {
+                return;
+            }
+
             string windowData = JsonUtility.ToJson(t, false);
 
 
@@ -20,6 +25,11 @@ namespace UnityUtilityEditor
 
         public static void Load(T window)
         {
+            if (window == null)
+            {
+                return;
+            }
+
             string windowData = EditorPrefs.GetString(nameof(T), JsonUtility.ToJson(window, false));
 
 

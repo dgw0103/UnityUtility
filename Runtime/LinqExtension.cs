@@ -14,7 +14,6 @@ namespace System.Linq
                 {
                     continue;
                 }
-
                 yield return item;
             }
         }
