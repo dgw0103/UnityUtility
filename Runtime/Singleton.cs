@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace UnityUtility
 {
-    public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>, class
+    public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
     {
         private static T instance;
 
@@ -14,7 +14,7 @@ namespace UnityUtility
         {
             if (instance == null)
             {
-                instance = this;
+                instance = (T)this;
                 DontDestroyOnLoad(instance);
             }
             else
