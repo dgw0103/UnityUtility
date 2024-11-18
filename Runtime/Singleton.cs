@@ -10,6 +10,21 @@ namespace UnityUtility
 
 
 
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+                DontDestroyOnLoad(instance);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+
+
+
         public static T Instance
         {
             get
