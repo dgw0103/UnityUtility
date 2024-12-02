@@ -8,7 +8,7 @@ namespace UnityUtility.Singleton
     /// Lazy singleton pattern. It dosen't need to create in hierarchy.
     /// </summary>
     /// <typeparam name="T">MonoBehaviour that will be added to an instantiated GameObject.</typeparam>
-    public abstract class LazySingleton<T> : MonoBehaviour where T : MonoBehaviour
+    public abstract class LazySingleton<T> : MonoBehaviour where T : LazySingleton<T>
     {
         private static T instance;
 
@@ -31,6 +31,11 @@ namespace UnityUtility.Singleton
             var gameObject = new GameObject($"{typeof(T).Name}");
             instance = gameObject.AddComponent<T>();
             DontDestroyOnLoad(gameObject);
+            instance.OnCreated();
+        }
+        protected virtual void OnCreated()
+        {
+
         }
     }
 }
