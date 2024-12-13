@@ -12,7 +12,7 @@ public class TextLog
 
 
 
-    public static void Log(string text)
+    public static void Log(object text)
     {
         GameObject canvasPrefab = CanvasPrefab;
         GameObject canvasInScene = Object.FindObjectsOfType<GameObject>().
@@ -27,10 +27,14 @@ public class TextLog
     }
     private static void CreateText(Transform textRoot, string text)
     {
+        CreateText(textRoot, text);
+    }
+    private static void CreateText(Transform textRoot, object text)
+    {
         GameObject textPrefab = AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(textPrefabGUID), typeof(GameObject)) as GameObject;
         GameObject textObject = PrefabUtility.InstantiatePrefab(textPrefab, textRoot) as GameObject;
 
-        textObject.GetComponent<Text>().text = text;
+        textObject.GetComponent<Text>().text = text.ToString();
     }
     private static GameObject CanvasPrefab
     {
